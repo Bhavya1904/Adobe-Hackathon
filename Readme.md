@@ -35,3 +35,5 @@ This project provides a solution for Challenge 1a. The application is containeri
 
 - Ensure the `input` and `output` directories exist in your project root.
 - The application will read from `/app/input` and write results to `/app/output`.
+- The application takes uploaded PDF files as input from the `input` folder.
+- After processing, it generates a JSON document for each PDF in the `output` folder.
