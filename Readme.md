@@ -23,17 +23,17 @@ This project provides a solution for Challenge 1a. The application is containeri
 
     Replace `mysolutionname:somerandomidentifier` with your preferred image name and tag.
 
-    ``` sh docker build -t mysolutionname:somerandomidentifier ```
+    ``` docker build -t mysolutionname:somerandomidentifier ```
 
 2. **Run the Docker Container**
 
     This command mounts the `input` and `output` directories and runs the solution in an isolated network.
 
-    ``` sh docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none mysolutionname:somerandomidentifier ```
+    ``` docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none mysolutionname:somerandomidentifier ```
 
 ## Notes
 
-- Ensure the `input` and `output` directories exist in your project root.
+- Ensure the `input` directory exist in your project root.
 - The application will read from `/app/input` and write results to `/app/output`.
 - The application takes uploaded PDF files as input from the `input` folder.
 - After processing, it generates a JSON document for each PDF in the `output` folder.
